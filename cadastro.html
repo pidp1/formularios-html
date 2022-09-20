@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="campoNome">Nome completo</label> <br/>
+            <input value="" id="campoNome" name="campoNome" type="text" placeholder="Fulano da Silva" required/>
+        </div>
+        <div>
+            <label for="campoEmail">Email</label> <br/>
+            <input value="" id="campoEmail" name="campoNome" type="email" placeholder="fulano@fulano.com" required />
+        </div>
+        <div>
+            <Label for="campoSenha">Senha</Label> <br/>
+            <input value="" type="password" id="campoSenha" name="campoSenha" placeholder="Sua senha" required />
+        </div>
+        <div>
+            <label for="campoProfissao">Profissão</label>
+            <select id="campoProfissao" name="campoProfissao">
+                <option selected disabled>Selecione</option>
+                <option value="professor">Professor</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="cozinheiro">Cozinheiro</option>  
+            </select>
+        </div>
+        <div>
+            <label for="">Idioma Nativo</label> <br>
+            <input id="checkIngles" type="radio" name="campoIdioma" value="ingles">
+            <label for="checkIngles">Inglês</label>
+        
+            <input id="checkFortugues" type="radio" name="campoIdioma" value="portugues">
+            <label for="checkFortugues">Português</label>
+            
+            <input id="checkEspanhol" type="radio" name="campoIdioma" value="espanhol">
+            <label for="checkEspanhol">Espanhol</label>
+        </div>
+        <div>
+            <label for="campoResumo">Fale sobre você</label> <br>
+            <textarea name="campoResumo" id="campoResumo" cols="30" rows="5" ></textarea>
+        </div>
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>
